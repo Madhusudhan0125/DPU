@@ -1,0 +1,29 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.603226",
+   "Default View_TopLeft":"-643,3",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace inst hier_dpu -pg 1 -lvl 2 -x 850 -y 430 -defaultsOSRD
+preplace inst zynq_ultra_ps_e -pg 1 -lvl 1 -x 370 -y 140 -defaultsOSRD
+preplace inst dpu_concat_irq -pg 1 -lvl 3 -x 1120 -y 470 -defaultsOSRD
+preplace inst rst_gen_reg -pg 1 -lvl 1 -x 370 -y 650 -defaultsOSRD
+preplace inst rst_gen_ghp -pg 1 -lvl 1 -x 370 -y 830 -defaultsOSRD
+preplace netloc hier_dpu_GHP_CLK_O 1 0 3 70 290 NJ 290 1020
+preplace netloc hier_dpu_INTR 1 2 1 NJ 470
+preplace netloc dpu_concat_irq_dout 1 0 4 60 540 NJ 540 NJ 540 1220
+preplace netloc zynq_ultra_ps_e_pl_clk0 1 0 2 20 320 700
+preplace netloc zynq_ultra_ps_e_pl_resetn0 1 0 2 50 480 670
+preplace netloc zynq_ultra_ps_e_pl_clk1 1 0 2 40 470 680
+preplace netloc rst_gen_reg_peripheral_aresetn 1 1 1 690 410n
+preplace netloc rst_gen_ghp_peripheral_aresetn 1 1 1 710 490n
+preplace netloc hier_dpu_M_AXI_HP0_FPD 1 0 3 50 280 NJ 280 1010
+preplace netloc hier_dpu_M_AXI_HP1_FPD 1 0 3 30 300 NJ 300 1000
+preplace netloc hier_dpu_M_AXI_LPD 1 0 3 40 310 NJ 310 990
+preplace netloc zynq_ultra_ps_e_M_AXI_HPM0_LPD 1 1 1 710 110n
+levelinfo -pg 1 0 370 850 1120 1240
+pagesize -pg 1 -db -bbox -sgen 0 0 1240 930
+"
+}
+

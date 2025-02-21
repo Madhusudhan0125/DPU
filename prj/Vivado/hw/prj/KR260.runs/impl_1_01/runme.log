@@ -1,0 +1,985 @@
+
+*** Running vivado
+    with args -log top_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source top_wrapper.tcl -notrace
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source top_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/madhusudhan/Downloads/DPUCZDX8G_VAI_v3.0/dpu_ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2022.2/data/ip'.
+Command: link_design -top top_wrapper -part xck26-sfvc784-2LV-c
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xck26-sfvc784-2LV-c
+Netlist sorting complete. Time (s): cpu = 00:00:00.41 ; elapsed = 00:00:00.41 . Memory (MB): peak = 2264.523 ; gain = 0.000 ; free physical = 9530 ; free virtual = 11359
+INFO: [Netlist 29-17] Analyzing 1462 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 9 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/madhusudhan/Downloads/DPUCZDX8G_VAI_v3.0/prj/Vivado/hw/srcs/top/ip/top_dpu_clk_wiz_0/top_dpu_clk_wiz_0_board.xdc] for cell 'top_i/hier_dpu/hier_dpu_clk/dpu_clk_wiz/inst'
+Finished Parsing XDC File [/home/madhusudhan/Downloads/DPUCZDX8G_VAI_v3.0/prj/Vivado/hw/srcs/top/ip/top_dpu_clk_wiz_0/top_dpu_clk_wiz_0_board.xdc] for cell 'top_i/hier_dpu/hier_dpu_clk/dpu_clk_wiz/inst'
+Parsing XDC File [/home/madhusudhan/Downloads/DPUCZDX8G_VAI_v3.0/prj/Vivado/hw/srcs/top/ip/top_dpu_clk_wiz_0/top_dpu_clk_wiz_0.xdc] for cell 'top_i/hier_dpu/hier_dpu_clk/dpu_clk_wiz/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/madhusudhan/Downloads/DPUCZDX8G_VAI_v3.0/prj/Vivado/hw/srcs/top/ip/top_dpu_clk_wiz_0/top_dpu_clk_wiz_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [/home/madhusudhan/Downloads/DPUCZDX8G_VAI_v3.0/prj/Vivado/hw/srcs/top/ip/top_dpu_clk_wiz_0/top_dpu_clk_wiz_0.xdc:57]
+Finished Parsing XDC File [/home/madhusudhan/Downloads/DPUCZDX8G_VAI_v3.0/prj/Vivado/hw/srcs/top/ip/top_dpu_clk_wiz_0/top_dpu_clk_wiz_0.xdc] for cell 'top_i/hier_dpu/hier_dpu_clk/dpu_clk_wiz/inst'
+Parsing XDC File [/home/madhusudhan/Downloads/DPUCZDX8G_VAI_v3.0/prj/Vivado/hw/srcs/top/ip/top_rst_gen_clk_0/top_rst_gen_clk_0_board.xdc] for cell 'top_i/hier_dpu/hier_dpu_clk/rst_gen_clk/U0'
+Finished Parsing XDC File [/home/madhusudhan/Downloads/DPUCZDX8G_VAI_v3.0/prj/Vivado/hw/srcs/top/ip/top_rst_gen_clk_0/top_rst_gen_clk_0_board.xdc] for cell 'top_i/hier_dpu/hier_dpu_clk/rst_gen_clk/U0'
+Parsing XDC File [/home/madhusudhan/Downloads/DPUCZDX8G_VAI_v3.0/prj/Vivado/hw/srcs/top/ip/top_rst_gen_clk_0/top_rst_gen_clk_0.xdc] for cell 'top_i/hier_dpu/hier_dpu_clk/rst_gen_clk/U0'
+Finished Parsing XDC File [/home/madhusudhan/Downloads/DPUCZDX8G_VAI_v3.0/prj/Vivado/hw/srcs/top/ip/top_rst_gen_clk_0/top_rst_gen_clk_0.xdc] for cell 'top_i/hier_dpu/hier_dpu_clk/rst_gen_clk/U0'
+CRITICAL WARNING: [Designutils 20-1280] Could not find module 'top_rst_gen_clk_dsp_0'. The XDC file /home/madhusudhan/Downloads/DPUCZDX8G_VAI_v3.0/prj/Vivado/hw/srcs/top/ip/top_rst_gen_clk_dsp_0/top_rst_gen_clk_dsp_0_board.xdc will not be read for any cell of this module.
+CRITICAL WARNING: [Designutils 20-1280] Could not find module 'top_rst_gen_clk_dsp_0'. The XDC file /home/madhusudhan/Downloads/DPUCZDX8G_VAI_v3.0/prj/Vivado/hw/srcs/top/ip/top_rst_gen_clk_dsp_0/top_rst_gen_clk_dsp_0.xdc will not be read for any cell of this module.
+Parsing XDC File [/home/madhusudhan/Downloads/DPUCZDX8G_VAI_v3.0/prj/Vivado/hw/srcs/top/ip/top_zynq_ultra_ps_e_0/top_zynq_ultra_ps_e_0.xdc] for cell 'top_i/zynq_ultra_ps_e/inst'
+Finished Parsing XDC File [/home/madhusudhan/Downloads/DPUCZDX8G_VAI_v3.0/prj/Vivado/hw/srcs/top/ip/top_zynq_ultra_ps_e_0/top_zynq_ultra_ps_e_0.xdc] for cell 'top_i/zynq_ultra_ps_e/inst'
+Parsing XDC File [/home/madhusudhan/Downloads/DPUCZDX8G_VAI_v3.0/prj/Vivado/hw/srcs/top/ip/top_rst_gen_reg_0/top_rst_gen_reg_0_board.xdc] for cell 'top_i/rst_gen_reg/U0'
+Finished Parsing XDC File [/home/madhusudhan/Downloads/DPUCZDX8G_VAI_v3.0/prj/Vivado/hw/srcs/top/ip/top_rst_gen_reg_0/top_rst_gen_reg_0_board.xdc] for cell 'top_i/rst_gen_reg/U0'
+Parsing XDC File [/home/madhusudhan/Downloads/DPUCZDX8G_VAI_v3.0/prj/Vivado/hw/srcs/top/ip/top_rst_gen_reg_0/top_rst_gen_reg_0.xdc] for cell 'top_i/rst_gen_reg/U0'
+Finished Parsing XDC File [/home/madhusudhan/Downloads/DPUCZDX8G_VAI_v3.0/prj/Vivado/hw/srcs/top/ip/top_rst_gen_reg_0/top_rst_gen_reg_0.xdc] for cell 'top_i/rst_gen_reg/U0'
+Parsing XDC File [/home/madhusudhan/Downloads/DPUCZDX8G_VAI_v3.0/prj/Vivado/hw/srcs/top/ip/top_rst_gen_ghp_0/top_rst_gen_ghp_0_board.xdc] for cell 'top_i/rst_gen_ghp/U0'
+Finished Parsing XDC File [/home/madhusudhan/Downloads/DPUCZDX8G_VAI_v3.0/prj/Vivado/hw/srcs/top/ip/top_rst_gen_ghp_0/top_rst_gen_ghp_0_board.xdc] for cell 'top_i/rst_gen_ghp/U0'
+Parsing XDC File [/home/madhusudhan/Downloads/DPUCZDX8G_VAI_v3.0/prj/Vivado/hw/srcs/top/ip/top_rst_gen_ghp_0/top_rst_gen_ghp_0.xdc] for cell 'top_i/rst_gen_ghp/U0'
+Finished Parsing XDC File [/home/madhusudhan/Downloads/DPUCZDX8G_VAI_v3.0/prj/Vivado/hw/srcs/top/ip/top_rst_gen_ghp_0/top_rst_gen_ghp_0.xdc] for cell 'top_i/rst_gen_ghp/U0'
+Parsing XDC File [/home/madhusudhan/Downloads/DPUCZDX8G_VAI_v3.0/prj/Vivado/hw/constrs/pin.xdc]
+Finished Parsing XDC File [/home/madhusudhan/Downloads/DPUCZDX8G_VAI_v3.0/prj/Vivado/hw/constrs/pin.xdc]
+Parsing XDC File [/home/madhusudhan/Downloads/DPUCZDX8G_VAI_v3.0/prj/Vivado/hw/constrs/misc.xdc]
+Finished Parsing XDC File [/home/madhusudhan/Downloads/DPUCZDX8G_VAI_v3.0/prj/Vivado/hw/constrs/misc.xdc]
+Parsing XDC File [/home/madhusudhan/Downloads/DPUCZDX8G_VAI_v3.0/prj/Vivado/hw/constrs/timing.xdc]
+Finished Parsing XDC File [/home/madhusudhan/Downloads/DPUCZDX8G_VAI_v3.0/prj/Vivado/hw/constrs/timing.xdc]
+Parsing XDC File [/home/madhusudhan/Downloads/DPUCZDX8G_VAI_v3.0/prj/Vivado/hw/constrs/debug.xdc]
+Finished Parsing XDC File [/home/madhusudhan/Downloads/DPUCZDX8G_VAI_v3.0/prj/Vivado/hw/constrs/debug.xdc]
+Parsing XDC File [/home/madhusudhan/Downloads/DPUCZDX8G_VAI_v3.0/prj/Vivado/hw/srcs/top/ip/top_auto_cc_0/top_auto_cc_0_clocks.xdc] for cell 'top_i/hier_dpu/hier_dpu_ghp/dpu_intc_M_AXI_LPD/s00_couplers/auto_cc/inst'
+Finished Parsing XDC File [/home/madhusudhan/Downloads/DPUCZDX8G_VAI_v3.0/prj/Vivado/hw/srcs/top/ip/top_auto_cc_0/top_auto_cc_0_clocks.xdc] for cell 'top_i/hier_dpu/hier_dpu_ghp/dpu_intc_M_AXI_LPD/s00_couplers/auto_cc/inst'
+Parsing XDC File [/home/madhusudhan/Downloads/DPUCZDX8G_VAI_v3.0/prj/Vivado/hw/srcs/top/ip/top_auto_cc_1/top_auto_cc_1_clocks.xdc] for cell 'top_i/hier_dpu/hier_dpu_ghp/dpu_intc_M_AXI_HP0_FPD/s00_couplers/auto_cc/inst'
+Finished Parsing XDC File [/home/madhusudhan/Downloads/DPUCZDX8G_VAI_v3.0/prj/Vivado/hw/srcs/top/ip/top_auto_cc_1/top_auto_cc_1_clocks.xdc] for cell 'top_i/hier_dpu/hier_dpu_ghp/dpu_intc_M_AXI_HP0_FPD/s00_couplers/auto_cc/inst'
+Parsing XDC File [/home/madhusudhan/Downloads/DPUCZDX8G_VAI_v3.0/prj/Vivado/hw/srcs/top/ip/top_auto_cc_2/top_auto_cc_2_clocks.xdc] for cell 'top_i/hier_dpu/hier_dpu_ghp/dpu_intc_M_AXI_HP1_FPD/s00_couplers/auto_cc/inst'
+Finished Parsing XDC File [/home/madhusudhan/Downloads/DPUCZDX8G_VAI_v3.0/prj/Vivado/hw/srcs/top/ip/top_auto_cc_2/top_auto_cc_2_clocks.xdc] for cell 'top_i/hier_dpu/hier_dpu_ghp/dpu_intc_M_AXI_HP1_FPD/s00_couplers/auto_cc/inst'
+Parsing XDC File [/home/madhusudhan/Downloads/DPUCZDX8G_VAI_v3.0/prj/Vivado/hw/srcs/top/ip/top_DPUCZDX8G_0/top_DPUCZDX8G_0.xdc] for cell 'top_i/hier_dpu/DPUCZDX8G/inst'
+Finished Parsing XDC File [/home/madhusudhan/Downloads/DPUCZDX8G_VAI_v3.0/prj/Vivado/hw/srcs/top/ip/top_DPUCZDX8G_0/top_DPUCZDX8G_0.xdc] for cell 'top_i/hier_dpu/DPUCZDX8G/inst'
+Parsing XDC File [/home/madhusudhan/Downloads/DPUCZDX8G_VAI_v3.0/prj/Vivado/hw/srcs/top/ip/top_DPUCZDX8G_0/top_DPUCZDX8G_0_impl.xdc] for cell 'top_i/hier_dpu/DPUCZDX8G/inst'
+Finished Parsing XDC File [/home/madhusudhan/Downloads/DPUCZDX8G_VAI_v3.0/prj/Vivado/hw/srcs/top/ip/top_DPUCZDX8G_0/top_DPUCZDX8G_0_impl.xdc] for cell 'top_i/hier_dpu/DPUCZDX8G/inst'
+WARNING: [Vivado_Tcl 4-919] Waiver ID 'CDC-6' -from list should not be empty. [/tools/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:23]
+WARNING: [Vivado_Tcl 4-919] Waiver ID 'CDC-6' -from list should not be empty. [/tools/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:23]
+INFO: [Project 1-1714] 99 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-1687] 4 scoped IP constraints or related sub-commands were skipped due to synthesis logic optimizations usually triggered by constant connectivity or unconnected output pins. To review the skipped constraints and messages, run the command 'set_param netlist.IPMsgFiltering false' before opening the design.
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3264.516 ; gain = 0.000 ; free physical = 9060 ; free virtual = 10941
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 484 instances were transformed.
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 134 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 8 instances
+  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 146 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 3 instances
+  RAM64M => RAM64M (RAMD64E(x4)): 3 instances
+  RAM64M8 => RAM64M8 (RAMD64E(x8)): 184 instances
+  RAM64X1D => RAM64X1D (RAMD64E(x2)): 6 instances
+
+14 Infos, 2 Warnings, 2 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:26 . Memory (MB): peak = 3264.516 ; gain = 1921.570 ; free physical = 9060 ; free virtual = 10941
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xck26'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.66 . Memory (MB): peak = 3264.516 ; gain = 0.000 ; free physical = 9035 ; free virtual = 10917
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 134d9402c
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:02 . Memory (MB): peak = 3264.516 ; gain = 0.000 ; free physical = 8973 ; free virtual = 10856
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-1287] Pulled Inverter top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_buf_top/u_img_bkrd/GenPtGrp[1].u_routing/GenPgN.u_axi_rs/AssignBkSelBinary[0].GenOnehot2BinaryPP4.bk_sel_binary[0][1]_i_1 into driver instance top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_buf_top/u_img_bkrd/GenPtGrp[1].u_routing/GenPgN.u_axi_rs/bk_sel[4]_i_4, which resulted in an inversion of 8 pins
+INFO: [Opt 31-1287] Pulled Inverter top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_buf_top/u_img_bkrd/GenPtGrp[1].u_routing/GenPgN.u_axi_rs/AssignBkSelBinary[1].GenOnehot2BinaryPP4.bk_sel_binary[1][1]_i_1 into driver instance top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_buf_top/u_img_bkrd/GenPtGrp[1].u_routing/GenPgN.u_axi_rs/bk_sel[5]_i_4, which resulted in an inversion of 8 pins
+INFO: [Opt 31-1287] Pulled Inverter top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_buf_top/u_img_bkrd/GenPtGrp[1].u_routing/GenPgN.u_axi_rs/AssignBkSelBinary[2].GenOnehot2BinaryPP4.bk_sel_binary[2][1]_i_1 into driver instance top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_buf_top/u_img_bkrd/GenPtGrp[1].u_routing/GenPgN.u_axi_rs/bk_sel[6]_i_4, which resulted in an inversion of 8 pins
+INFO: [Opt 31-1287] Pulled Inverter top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_buf_top/u_img_bkrd/GenPtGrp[1].u_routing/GenPgN.u_axi_rs/AssignBkSelBinary[3].GenOnehot2BinaryPP4.bk_sel_binary[3][1]_i_1__0 into driver instance top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_buf_top/u_img_bkrd/GenPtGrp[1].u_routing/GenPgN.u_axi_rs/bk_sel[7]_i_5, which resulted in an inversion of 8 pins
+INFO: [Opt 31-1287] Pulled Inverter top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_buf_writer/dm_write_ctrl/cm_buf_wctrl_augm/state_machines[1].is_in_chs_tail_i_11 into driver instance top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_buf_writer/dm_write_ctrl/cm_buf_wctrl_augm/state_machines[1].vld_byte_p0[0]_i_2, which resulted in an inversion of 19 pins
+INFO: [Opt 31-1287] Pulled Inverter top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_buf_writer/u_cfg_buf_writer_bridge/gen_dm_port_st_machines[0].u_cfg_fifo/m_ram/FSM_sequential_gen_dm_port_st_machines[0].curr_st[0]_i_1 into driver instance top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_buf_writer/u_cfg_buf_writer_bridge/gen_dm_port_st_machines[0].u_cfg_fifo/m_ram/FSM_sequential_gen_dm_port_st_machines[0].curr_st[0]_i_2, which resulted in an inversion of 20 pins
+INFO: [Opt 31-1287] Pulled Inverter top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_buf_writer/u_cfg_buf_writer_bridge/gen_dm_port_st_machines[1].u_cfg_fifo/m_ram/FSM_sequential_gen_dm_port_st_machines[1].curr_st[0]_i_1 into driver instance top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_buf_writer/u_cfg_buf_writer_bridge/gen_dm_port_st_machines[1].u_cfg_fifo/m_ram/FSM_sequential_gen_dm_port_st_machines[1].curr_st[0]_i_2, which resulted in an inversion of 19 pins
+INFO: [Opt 31-1287] Pulled Inverter top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_buf_writer/u_cfg_buf_writer_bridge/gen_dm_port_st_machines[1].u_cfg_fifo/m_ram/gen_dm_port_st_machines[1].mode1_div_trans_cnt[9]_i_1 into driver instance top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_buf_writer/u_cfg_buf_writer_bridge/gen_dm_port_st_machines[1].u_cfg_fifo/m_ram/gen_dm_port_st_machines[1].mode1_div_trans_cnt[9]_i_3, which resulted in an inversion of 21 pins
+INFO: [Opt 31-1287] Pulled Inverter top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_buf_writer/u_ddr_reader/gen_state_machine[0].dm_is_idle[0]_i_1 into driver instance top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_buf_writer/u_ddr_reader/gen_state_machine[0].dm_is_idle[0]_i_2, which resulted in an inversion of 2 pins
+INFO: [Opt 31-1287] Pulled Inverter top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_buf_writer/u_ddr_reader/gen_state_machine[1].dm_is_idle[1]_i_1 into driver instance top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_buf_writer/u_ddr_reader/gen_state_machine[1].dm_is_idle[1]_i_2, which resulted in an inversion of 2 pins
+INFO: [Opt 31-1287] Pulled Inverter top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_scheduler_top/m_scheduler_thdl/m_sctrl/instr_fifo/cs[0]_i_1__1 into driver instance top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_scheduler_top/m_scheduler_thdl/m_sctrl/instr_fifo/cs[0]_i_2__2, which resulted in an inversion of 13 pins
+INFO: [Opt 31-1287] Pulled Inverter top_i/hier_dpu/hier_dpu_ghp/dpu_intc_M_AXI_HP0_FPD/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst_i_1 into driver instance top_i/hier_dpu/hier_dpu_ghp/dpu_intc_M_AXI_HP0_FPD/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi_i_1, which resulted in an inversion of 1 pins
+INFO: [Opt 31-1287] Pulled Inverter top_i/hier_dpu/hier_dpu_ghp/dpu_intc_M_AXI_HP1_FPD/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst_i_1 into driver instance top_i/hier_dpu/hier_dpu_ghp/dpu_intc_M_AXI_HP1_FPD/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi_i_1, which resulted in an inversion of 1 pins
+INFO: [Opt 31-1287] Pulled Inverter top_i/hier_dpu/hier_dpu_ghp/dpu_intc_M_AXI_LPD/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst_i_1 into driver instance top_i/hier_dpu/hier_dpu_ghp/dpu_intc_M_AXI_LPD/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi_i_1, which resulted in an inversion of 1 pins
+INFO: [Opt 31-138] Pushed 126 inverter(s) to 2233 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 10af6119f
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 3327.324 ; gain = 0.000 ; free physical = 8832 ; free virtual = 10716
+INFO: [Opt 31-389] Phase Retarget created 2 cells and removed 454 cells
+INFO: [Opt 31-1021] In phase Retarget, 94 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 8fc70b99
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 3327.324 ; gain = 0.000 ; free physical = 8832 ; free virtual = 10715
+INFO: [Opt 31-389] Phase Constant propagation created 225 cells and removed 262 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 94 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 10528c6f7
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:03 . Memory (MB): peak = 3327.324 ; gain = 0.000 ; free physical = 8837 ; free virtual = 10723
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 333 cells
+INFO: [Opt 31-1021] In phase Sweep, 451 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 BUFG optimization
+INFO: [Opt 31-1077] Phase BUFG optimization inserted 0 global clock buffer(s) for CLOCK_LOW_FANOUT.
+Phase 4 BUFG optimization | Checksum: eb492b40
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:03 . Memory (MB): peak = 3327.324 ; gain = 0.000 ; free physical = 8836 ; free virtual = 10722
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: 10b807045
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:03 . Memory (MB): peak = 3327.324 ; gain = 0.000 ; free physical = 8836 ; free virtual = 10722
+INFO: [Opt 31-389] Phase Shift Register Optimization created 3 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: e55f8df2
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:03 . Memory (MB): peak = 3327.324 ; gain = 0.000 ; free physical = 8841 ; free virtual = 10727
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 142 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               2  |             454  |                                             94  |
+|  Constant propagation         |             225  |             262  |                                             94  |
+|  Sweep                        |               0  |             333  |                                            451  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               3  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                            142  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.05 . Memory (MB): peak = 3327.324 ; gain = 0.000 ; free physical = 8843 ; free virtual = 10728
+Ending Logic Optimization Task | Checksum: dfbe3ce4
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:04 . Memory (MB): peak = 3327.324 ; gain = 0.000 ; free physical = 8843 ; free virtual = 10728
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: dfbe3ce4
+
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3327.324 ; gain = 0.000 ; free physical = 8848 ; free virtual = 10732
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: dfbe3ce4
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3327.324 ; gain = 0.000 ; free physical = 8848 ; free virtual = 10732
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3327.324 ; gain = 0.000 ; free physical = 8848 ; free virtual = 10732
+Ending Netlist Obfuscation Task | Checksum: dfbe3ce4
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3327.324 ; gain = 0.000 ; free physical = 8848 ; free virtual = 10732
+INFO: [Common 17-83] Releasing license: Implementation
+50 Infos, 2 Warnings, 2 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:07 . Memory (MB): peak = 3327.324 ; gain = 62.809 ; free physical = 8848 ; free virtual = 10732
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-480] Writing timing data to binary archive.
+INFO: [Common 17-1381] The checkpoint '/home/madhusudhan/Downloads/DPUCZDX8G_VAI_v3.0/prj/Vivado/hw/prj/KR260.runs/impl_1_01/top_wrapper_opt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:13 ; elapsed = 00:00:05 . Memory (MB): peak = 3400.590 ; gain = 73.266 ; free physical = 8626 ; free virtual = 10534
+INFO: [runtcl-4] Executing : report_drc -file top_wrapper_drc_opted.rpt -pb top_wrapper_drc_opted.pb -rpx top_wrapper_drc_opted.rpx
+Command: report_drc -file top_wrapper_drc_opted.rpt -pb top_wrapper_drc_opted.pb -rpx top_wrapper_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file /home/madhusudhan/Downloads/DPUCZDX8G_VAI_v3.0/prj/Vivado/hw/prj/KR260.runs/impl_1_01/top_wrapper_drc_opted.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:26 ; elapsed = 00:00:17 . Memory (MB): peak = 4665.680 ; gain = 1265.090 ; free physical = 7534 ; free virtual = 9605
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xck26'
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4665.680 ; gain = 0.000 ; free physical = 7493 ; free virtual = 9565
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 8857b7b1
+
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 4665.680 ; gain = 0.000 ; free physical = 7493 ; free virtual = 9565
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4665.680 ; gain = 0.000 ; free physical = 7494 ; free virtual = 9565
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: e968c6eb
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 4665.680 ; gain = 0.000 ; free physical = 7518 ; free virtual = 9601
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 1e1189ef8
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:09 . Memory (MB): peak = 4665.680 ; gain = 0.000 ; free physical = 7313 ; free virtual = 9433
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 1e1189ef8
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:09 . Memory (MB): peak = 4665.680 ; gain = 0.000 ; free physical = 7313 ; free virtual = 9433
+Phase 1 Placer Initialization | Checksum: 1e1189ef8
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:09 . Memory (MB): peak = 4665.680 ; gain = 0.000 ; free physical = 7318 ; free virtual = 9439
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+
+Phase 2.1.1 Partition Driven Placement
+
+Phase 2.1.1.1 PBP: Partition Driven Placement
+Phase 2.1.1.1 PBP: Partition Driven Placement | Checksum: 13baccb2d
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:20 . Memory (MB): peak = 4744.281 ; gain = 78.602 ; free physical = 7376 ; free virtual = 9501
+
+Phase 2.1.1.2 PBP: Clock Region Placement
+Phase 2.1.1.2 PBP: Clock Region Placement | Checksum: 13baccb2d
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:20 . Memory (MB): peak = 4744.281 ; gain = 78.602 ; free physical = 7350 ; free virtual = 9477
+
+Phase 2.1.1.3 PBP: Compute Congestion
+Phase 2.1.1.3 PBP: Compute Congestion | Checksum: 13baccb2d
+
+Time (s): cpu = 00:00:51 ; elapsed = 00:00:21 . Memory (MB): peak = 4790.645 ; gain = 124.965 ; free physical = 7237 ; free virtual = 9416
+
+Phase 2.1.1.4 PBP: UpdateTiming
+Phase 2.1.1.4 PBP: UpdateTiming | Checksum: 127250adc
+
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:22 . Memory (MB): peak = 4820.660 ; gain = 154.980 ; free physical = 7256 ; free virtual = 9437
+
+Phase 2.1.1.5 PBP: Add part constraints
+Phase 2.1.1.5 PBP: Add part constraints | Checksum: 127250adc
+
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:22 . Memory (MB): peak = 4820.660 ; gain = 154.980 ; free physical = 7256 ; free virtual = 9437
+Phase 2.1.1 Partition Driven Placement | Checksum: 127250adc
+
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:22 . Memory (MB): peak = 4820.660 ; gain = 154.980 ; free physical = 7271 ; free virtual = 9453
+Phase 2.1 Floorplanning | Checksum: 1d4166cc5
+
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:22 . Memory (MB): peak = 4820.660 ; gain = 154.980 ; free physical = 7270 ; free virtual = 9453
+
+Phase 2.2 Update Timing before SLR Path Opt
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 1d4166cc5
+
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:22 . Memory (MB): peak = 4820.660 ; gain = 154.980 ; free physical = 7271 ; free virtual = 9453
+
+Phase 2.3 Post-Processing in Floorplanning
+Phase 2.3 Post-Processing in Floorplanning | Checksum: 12a0fe5e3
+
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:22 . Memory (MB): peak = 4820.660 ; gain = 154.980 ; free physical = 7271 ; free virtual = 9453
+
+Phase 2.4 Global Placement Core
+
+Phase 2.4.1 UpdateTiming Before Physical Synthesis
+Phase 2.4.1 UpdateTiming Before Physical Synthesis | Checksum: 76cc642a
+
+Time (s): cpu = 00:01:53 ; elapsed = 00:00:42 . Memory (MB): peak = 4835.691 ; gain = 170.012 ; free physical = 7274 ; free virtual = 9447
+
+Phase 2.4.2 Physical Synthesis In Placer
+INFO: [Physopt 32-1035] Found 3 LUTNM shape to break, 1830 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 3, two critical 0, total 3, new lutff created 0
+INFO: [Physopt 32-1138] End 1 Pass. Optimized 798 nets or LUTs. Breaked 3 LUTs, combined 795 existing LUTs and moved 0 existing LUT
+INFO: [Physopt 32-1030] Pass 1. Identified 184 candidate driver sets for equivalent driver rewiring.
+INFO: [Physopt 32-661] Optimized 0 net.  Re-placed 0 instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-76] Pass 1. Identified 2 candidate nets for fanout optimization.
+INFO: [Physopt 32-81] Processed net top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/rst_n_r. Replicated 7 times.
+INFO: [Physopt 32-81] Processed net top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/nl_tvalid. Replicated 7 times.
+INFO: [Physopt 32-232] Optimized 2 nets. Created 14 new instances.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 2 nets or cells. Created 14 new cells, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.11 . Memory (MB): peak = 4835.691 ; gain = 0.000 ; free physical = 7266 ; free virtual = 9442
+INFO: [Physopt 32-457] Pass 1. Identified 35 candidate cells for DSP register optimization.
+INFO: [Physopt 32-665] Processed cell top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[0].GenMultOcp[3].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2. 8 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[2].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2. 2 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[0].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2. 14 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[3].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2. 2 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[0].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2. 2 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[0].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2. 14 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[2].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2. 14 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[0].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2. 14 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[3].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2. 14 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[3].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2. 2 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[3].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2. 14 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[0].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2. 14 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[2].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2. 14 registers were pushed out.
+INFO: [Physopt 32-666] Processed cell top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[3].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2. No change.
+INFO: [Physopt 32-665] Processed cell top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[0].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2. 8 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[2].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2. 8 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[0].GenMultOcp[2].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2. 8 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[0].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2. 8 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[3].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2. 14 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[1].GenMultOcp[3].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2. 8 registers were pushed out.
+INFO: [Physopt 32-666] Processed cell top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[1].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2. No change.
+INFO: [Physopt 32-665] Processed cell top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[2].GenMultOcp[3].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2. 8 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[1].GenMultOcp[2].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2. 8 registers were pushed out.
+INFO: [Physopt 32-666] Processed cell top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[3].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2. No change.
+INFO: [Physopt 32-666] Processed cell top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[1].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2. No change.
+INFO: [Physopt 32-666] Processed cell top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[3].GenMultOcp[2].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2. No change.
+INFO: [Physopt 32-666] Processed cell top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[3].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2. No change.
+INFO: [Physopt 32-665] Processed cell top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[0].GenMultOcp[3].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2. 8 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[1].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2. 8 registers were pushed out.
+INFO: [Physopt 32-666] Processed cell top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[2].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2. No change.
+INFO: [Physopt 32-666] Processed cell top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[3].GenMultOcp[3].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2. No change.
+INFO: [Physopt 32-665] Processed cell top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[3].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2. 8 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[0].GenMultOcp[2].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2. 8 registers were pushed out.
+INFO: [Physopt 32-666] Processed cell top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[2].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2. No change.
+INFO: [Physopt 32-666] Processed cell top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[3].GenMultOcp[2].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2. No change.
+INFO: [Physopt 32-457] Pass 2. Identified 11 candidate cells for DSP register optimization.
+INFO: [Physopt 32-457] Pass 2. Identified 10 candidate cells for DSP register optimization.
+INFO: [Physopt 32-666] Processed cell top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[2].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2. No change.
+INFO: [Physopt 32-666] Processed cell top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[0].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2. No change.
+INFO: [Physopt 32-666] Processed cell top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[0].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2. No change.
+INFO: [Physopt 32-666] Processed cell top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[2].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2. No change.
+INFO: [Physopt 32-666] Processed cell top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[0].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2. No change.
+INFO: [Physopt 32-666] Processed cell top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[3].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2. No change.
+INFO: [Physopt 32-666] Processed cell top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[0].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2. No change.
+INFO: [Physopt 32-666] Processed cell top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[3].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2. No change.
+INFO: [Physopt 32-666] Processed cell top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[3].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2. No change.
+INFO: [Physopt 32-666] Processed cell top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[0].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2. No change.
+INFO: [Physopt 32-666] Processed cell top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[2].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2. No change.
+INFO: [Physopt 32-666] Processed cell top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[3].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2. No change.
+INFO: [Physopt 32-666] Processed cell top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[1].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2. No change.
+INFO: [Physopt 32-666] Processed cell top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[3].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2. No change.
+INFO: [Physopt 32-666] Processed cell top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[1].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2. No change.
+INFO: [Physopt 32-666] Processed cell top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[3].GenMultOcp[2].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2. No change.
+INFO: [Physopt 32-666] Processed cell top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[3].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2. No change.
+INFO: [Physopt 32-666] Processed cell top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[2].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2. No change.
+INFO: [Physopt 32-666] Processed cell top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[3].GenMultOcp[3].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2. No change.
+INFO: [Physopt 32-666] Processed cell top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[2].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2. No change.
+INFO: [Physopt 32-666] Processed cell top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[3].GenMultOcp[2].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2. No change.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 25 nets or cells. Created 230 new cells, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 4835.691 ; gain = 0.000 ; free physical = 7280 ; free virtual = 9456
+INFO: [Physopt 32-1123] No candidate cells found for Shift Register to Pipeline optimization
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-677] No candidate cells for Shift Register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-526] No candidate cells for BRAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4835.691 ; gain = 0.000 ; free physical = 7284 ; free virtual = 9460
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |            3  |            795  |                   798  |           0  |           1  |  00:00:01  |
+|  Retime                                           |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Equivalent Driver Rewiring                       |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Very High Fanout                                 |           14  |              0  |                     2  |           0  |           1  |  00:00:00  |
+|  DSP Register                                     |          230  |              0  |                    25  |           0  |           1  |  00:00:04  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  URAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |          247  |            795  |                   825  |           0  |          10  |  00:00:06  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.4.2 Physical Synthesis In Placer | Checksum: d3f0d1cb
+
+Time (s): cpu = 00:02:02 ; elapsed = 00:00:50 . Memory (MB): peak = 4835.691 ; gain = 170.012 ; free physical = 7285 ; free virtual = 9462
+Phase 2.4 Global Placement Core | Checksum: 1b240d2f1
+
+Time (s): cpu = 00:02:05 ; elapsed = 00:00:51 . Memory (MB): peak = 4835.691 ; gain = 170.012 ; free physical = 7197 ; free virtual = 9377
+Phase 2 Global Placement | Checksum: 1b240d2f1
+
+Time (s): cpu = 00:02:05 ; elapsed = 00:00:51 . Memory (MB): peak = 4835.691 ; gain = 170.012 ; free physical = 7226 ; free virtual = 9406
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 1e3dfd462
+
+Time (s): cpu = 00:02:09 ; elapsed = 00:00:52 . Memory (MB): peak = 4835.691 ; gain = 170.012 ; free physical = 7258 ; free virtual = 9436
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1820880e4
+
+Time (s): cpu = 00:02:13 ; elapsed = 00:00:54 . Memory (MB): peak = 4835.691 ; gain = 170.012 ; free physical = 7297 ; free virtual = 9474
+
+Phase 3.3 Small Shape DP
+
+Phase 3.3.1 Small Shape Clustering
+Phase 3.3.1 Small Shape Clustering | Checksum: 1560d8606
+
+Time (s): cpu = 00:02:36 ; elapsed = 00:01:00 . Memory (MB): peak = 4835.691 ; gain = 170.012 ; free physical = 7174 ; free virtual = 9412
+
+Phase 3.3.2 Flow Legalize Slice Clusters
+Phase 3.3.2 Flow Legalize Slice Clusters | Checksum: 1cbba2e99
+
+Time (s): cpu = 00:02:36 ; elapsed = 00:01:00 . Memory (MB): peak = 4835.691 ; gain = 170.012 ; free physical = 7178 ; free virtual = 9415
+
+Phase 3.3.3 Slice Area Swap
+
+Phase 3.3.3.1 Slice Area Swap Initial
+Phase 3.3.3.1 Slice Area Swap Initial | Checksum: 2065de32b
+
+Time (s): cpu = 00:02:39 ; elapsed = 00:01:03 . Memory (MB): peak = 4835.691 ; gain = 170.012 ; free physical = 7166 ; free virtual = 9404
+Phase 3.3.3 Slice Area Swap | Checksum: 2065de32b
+
+Time (s): cpu = 00:02:39 ; elapsed = 00:01:03 . Memory (MB): peak = 4835.691 ; gain = 170.012 ; free physical = 7165 ; free virtual = 9404
+Phase 3.3 Small Shape DP | Checksum: 147bad063
+
+Time (s): cpu = 00:02:46 ; elapsed = 00:01:05 . Memory (MB): peak = 4835.691 ; gain = 170.012 ; free physical = 7164 ; free virtual = 9406
+
+Phase 3.4 Re-assign LUT pins
+Phase 3.4 Re-assign LUT pins | Checksum: 15e630e9e
+
+Time (s): cpu = 00:02:48 ; elapsed = 00:01:06 . Memory (MB): peak = 4835.691 ; gain = 170.012 ; free physical = 7127 ; free virtual = 9405
+
+Phase 3.5 Pipeline Register Optimization
+Phase 3.5 Pipeline Register Optimization | Checksum: 177e8af79
+
+Time (s): cpu = 00:02:48 ; elapsed = 00:01:07 . Memory (MB): peak = 4835.691 ; gain = 170.012 ; free physical = 7113 ; free virtual = 9399
+Phase 3 Detail Placement | Checksum: 177e8af79
+
+Time (s): cpu = 00:02:48 ; elapsed = 00:01:07 . Memory (MB): peak = 4835.691 ; gain = 170.012 ; free physical = 7096 ; free virtual = 9403
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: cf059706
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 8 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=0.105 | TNS=0.000 |
+Phase 1 Physical Synthesis Initialization | Checksum: 805d943c
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:00.67 . Memory (MB): peak = 4835.691 ; gain = 0.000 ; free physical = 7105 ; free virtual = 9377
+INFO: [Place 46-56] BUFG insertion identified 0 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to Illegal Netlist: 0.
+Ending Physical Synthesis Task | Checksum: ba32138e
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:00.94 . Memory (MB): peak = 4835.691 ; gain = 0.000 ; free physical = 7105 ; free virtual = 9377
+Phase 4.1.1.1 BUFG Insertion | Checksum: cf059706
+
+Time (s): cpu = 00:03:19 ; elapsed = 00:01:16 . Memory (MB): peak = 4835.691 ; gain = 170.012 ; free physical = 7105 ; free virtual = 9377
+
+Phase 4.1.1.2 Post Placement Timing Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=0.192. For the most accurate timing information please run report_timing.
+Phase 4.1.1.2 Post Placement Timing Optimization | Checksum: 1592cc639
+
+Time (s): cpu = 00:03:29 ; elapsed = 00:01:23 . Memory (MB): peak = 4835.691 ; gain = 170.012 ; free physical = 7169 ; free virtual = 9425
+
+Time (s): cpu = 00:03:29 ; elapsed = 00:01:23 . Memory (MB): peak = 4835.691 ; gain = 170.012 ; free physical = 7169 ; free virtual = 9426
+Phase 4.1 Post Commit Optimization | Checksum: 1592cc639
+
+Time (s): cpu = 00:03:29 ; elapsed = 00:01:24 . Memory (MB): peak = 4835.691 ; gain = 170.012 ; free physical = 7169 ; free virtual = 9425
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 4893.188 ; gain = 0.000 ; free physical = 7126 ; free virtual = 9383
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 1ccc4d5a9
+
+Time (s): cpu = 00:03:32 ; elapsed = 00:01:26 . Memory (MB): peak = 4893.188 ; gain = 227.508 ; free physical = 7133 ; free virtual = 9391
+
+Phase 4.3 Placer Reporting
+
+Phase 4.3.1 Print Estimated Congestion
+INFO: [Place 30-612] Post-Placement Estimated Congestion 
+ ________________________________________________________________________
+|           | Global Congestion | Long Congestion   | Short Congestion  |
+| Direction | Region Size       | Region Size       | Region Size       |
+|___________|___________________|___________________|___________________|
+|      North|                1x1|                4x4|                4x4|
+|___________|___________________|___________________|___________________|
+|      South|                1x1|                1x1|                2x2|
+|___________|___________________|___________________|___________________|
+|       East|                1x1|                1x1|                4x4|
+|___________|___________________|___________________|___________________|
+|       West|                2x2|                1x1|                4x4|
+|___________|___________________|___________________|___________________|
+
+Phase 4.3.1 Print Estimated Congestion | Checksum: 1ccc4d5a9
+
+Time (s): cpu = 00:03:33 ; elapsed = 00:01:26 . Memory (MB): peak = 4893.188 ; gain = 227.508 ; free physical = 7133 ; free virtual = 9390
+Phase 4.3 Placer Reporting | Checksum: 1ccc4d5a9
+
+Time (s): cpu = 00:03:33 ; elapsed = 00:01:27 . Memory (MB): peak = 4893.188 ; gain = 227.508 ; free physical = 7135 ; free virtual = 9393
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4893.188 ; gain = 0.000 ; free physical = 7135 ; free virtual = 9393
+
+Time (s): cpu = 00:03:33 ; elapsed = 00:01:27 . Memory (MB): peak = 4893.188 ; gain = 227.508 ; free physical = 7135 ; free virtual = 9393
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 23e71708d
+
+Time (s): cpu = 00:03:33 ; elapsed = 00:01:27 . Memory (MB): peak = 4893.188 ; gain = 227.508 ; free physical = 7135 ; free virtual = 9392
+Ending Placer Task | Checksum: 221e285ec
+
+Time (s): cpu = 00:03:33 ; elapsed = 00:01:27 . Memory (MB): peak = 4893.188 ; gain = 227.508 ; free physical = 7141 ; free virtual = 9398
+INFO: [Common 17-83] Releasing license: Implementation
+153 Infos, 2 Warnings, 2 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:03:37 ; elapsed = 00:01:28 . Memory (MB): peak = 4893.188 ; gain = 227.508 ; free physical = 7266 ; free virtual = 9522
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:08 ; elapsed = 00:00:04 . Memory (MB): peak = 4893.188 ; gain = 0.000 ; free physical = 7152 ; free virtual = 9539
+INFO: [Common 17-1381] The checkpoint '/home/madhusudhan/Downloads/DPUCZDX8G_VAI_v3.0/prj/Vivado/hw/prj/KR260.runs/impl_1_01/top_wrapper_placed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:13 ; elapsed = 00:00:07 . Memory (MB): peak = 4893.188 ; gain = 0.000 ; free physical = 7179 ; free virtual = 9485
+INFO: [runtcl-4] Executing : report_io -file top_wrapper_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.16 . Memory (MB): peak = 4893.188 ; gain = 0.000 ; free physical = 7156 ; free virtual = 9461
+INFO: [runtcl-4] Executing : report_utilization -file top_wrapper_utilization_placed.rpt -pb top_wrapper_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file top_wrapper_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.19 . Memory (MB): peak = 4893.188 ; gain = 0.000 ; free physical = 7190 ; free virtual = 9497
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xck26'
+
+Starting Initial Update Timing Task
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:04 . Memory (MB): peak = 4893.188 ; gain = 0.000 ; free physical = 7171 ; free virtual = 9480
+INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.000 ns. Skipping all physical synthesis optimizations.
+INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
+INFO: [Common 17-83] Releasing license: Implementation
+162 Infos, 2 Warnings, 2 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:08 ; elapsed = 00:00:04 . Memory (MB): peak = 4893.188 ; gain = 0.000 ; free physical = 7013 ; free virtual = 9432
+INFO: [Common 17-1381] The checkpoint '/home/madhusudhan/Downloads/DPUCZDX8G_VAI_v3.0/prj/Vivado/hw/prj/KR260.runs/impl_1_01/top_wrapper_physopt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 4893.188 ; gain = 0.000 ; free physical = 7131 ; free virtual = 9474
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xck26'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 32 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
+
+Phase 1 Build RT Design
+Checksum: PlaceDB: eca78872 ConstDB: 0 ShapeSum: c1a2ee0a RouteDB: 73980f70
+Nodegraph reading from file.  Time (s): cpu = 00:00:00.33 ; elapsed = 00:00:00.36 . Memory (MB): peak = 4893.188 ; gain = 0.000 ; free physical = 6829 ; free virtual = 9190
+Post Restoration Checksum: NetGraph: 69ed1518 NumContArr: 1bad3ef6 Constraints: 155a58ed Timing: 0
+Phase 1 Build RT Design | Checksum: 9af4acfb
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:06 . Memory (MB): peak = 4893.188 ; gain = 0.000 ; free physical = 6890 ; free virtual = 9252
+
+Phase 2 Router Initialization
+
+Phase 2.1 Fix Topology Constraints
+Phase 2.1 Fix Topology Constraints | Checksum: 9af4acfb
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:06 . Memory (MB): peak = 4893.188 ; gain = 0.000 ; free physical = 6855 ; free virtual = 9218
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 9af4acfb
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:06 . Memory (MB): peak = 4893.188 ; gain = 0.000 ; free physical = 6859 ; free virtual = 9221
+
+Phase 2.3 Global Clock Net Routing
+ Number of Nodes with overlaps = 0
+Phase 2.3 Global Clock Net Routing | Checksum: 11977d19d
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:07 . Memory (MB): peak = 4907.480 ; gain = 14.293 ; free physical = 6811 ; free virtual = 9173
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 180a6b55a
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:11 . Memory (MB): peak = 4907.480 ; gain = 14.293 ; free physical = 6817 ; free virtual = 9179
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.218  | TNS=0.000  | WHS=-0.190 | THS=-332.854|
+
+
+Phase 2.5 Update Timing for Bus Skew
+
+Phase 2.5.1 Update Timing
+Phase 2.5.1 Update Timing | Checksum: 14a76a6a5
+
+Time (s): cpu = 00:01:13 ; elapsed = 00:00:20 . Memory (MB): peak = 4959.473 ; gain = 66.285 ; free physical = 6880 ; free virtual = 9243
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.218  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 2.5 Update Timing for Bus Skew | Checksum: fcd7c4b1
+
+Time (s): cpu = 00:01:14 ; elapsed = 00:00:20 . Memory (MB): peak = 4959.473 ; gain = 66.285 ; free physical = 6880 ; free virtual = 9243
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0 %
+  Global Horizontal Routing Utilization  = 0 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 65503
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 55928
+  Number of Partially Routed Nets     = 9575
+  Number of Node Overlaps             = 0
+
+Phase 2 Router Initialization | Checksum: 193fbdcea
+
+Time (s): cpu = 00:01:15 ; elapsed = 00:00:20 . Memory (MB): peak = 4959.473 ; gain = 66.285 ; free physical = 6831 ; free virtual = 9194
+
+Phase 3 Initial Routing
+
+Phase 3.1 Global Routing
+Phase 3.1 Global Routing | Checksum: 193fbdcea
+
+Time (s): cpu = 00:01:15 ; elapsed = 00:00:20 . Memory (MB): peak = 4959.473 ; gain = 66.285 ; free physical = 6831 ; free virtual = 9194
+Phase 3 Initial Routing | Checksum: 2e33e4bc5
+
+Time (s): cpu = 00:01:28 ; elapsed = 00:00:24 . Memory (MB): peak = 4987.473 ; gain = 94.285 ; free physical = 6816 ; free virtual = 9179
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 14528
+ Number of Nodes with overlaps = 1512
+ Number of Nodes with overlaps = 237
+ Number of Nodes with overlaps = 62
+ Number of Nodes with overlaps = 30
+ Number of Nodes with overlaps = 20
+ Number of Nodes with overlaps = 16
+ Number of Nodes with overlaps = 11
+ Number of Nodes with overlaps = 7
+ Number of Nodes with overlaps = 7
+ Number of Nodes with overlaps = 6
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.093  | TNS=0.000  | WHS=-0.056 | THS=-0.735 |
+
+Phase 4.1 Global Iteration 0 | Checksum: 176681e40
+
+Time (s): cpu = 00:06:32 ; elapsed = 00:03:49 . Memory (MB): peak = 5052.480 ; gain = 159.293 ; free physical = 6787 ; free virtual = 9201
+
+Phase 4.2 Additional Iteration for Hold
+Phase 4.2 Additional Iteration for Hold | Checksum: 163ef4914
+
+Time (s): cpu = 00:06:32 ; elapsed = 00:03:49 . Memory (MB): peak = 5052.480 ; gain = 159.293 ; free physical = 6790 ; free virtual = 9204
+Phase 4 Rip-up And Reroute | Checksum: 163ef4914
+
+Time (s): cpu = 00:06:32 ; elapsed = 00:03:49 . Memory (MB): peak = 5052.480 ; gain = 159.293 ; free physical = 6790 ; free virtual = 9205
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: f1a2b9b1
+
+Time (s): cpu = 00:06:44 ; elapsed = 00:03:53 . Memory (MB): peak = 5052.480 ; gain = 159.293 ; free physical = 6817 ; free virtual = 9216
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.093  | TNS=0.000  | WHS=0.010  | THS=0.000  |
+
+
+Phase 5.1.2 Update Timing
+Phase 5.1.2 Update Timing | Checksum: 10cee834f
+
+Time (s): cpu = 00:06:53 ; elapsed = 00:03:55 . Memory (MB): peak = 5052.480 ; gain = 159.293 ; free physical = 6798 ; free virtual = 9197
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.093  | TNS=0.000  | WHS=0.010  | THS=0.000  |
+
+Phase 5.1 Delay CleanUp | Checksum: 1aeea7ce2
+
+Time (s): cpu = 00:06:53 ; elapsed = 00:03:56 . Memory (MB): peak = 5052.480 ; gain = 159.293 ; free physical = 6804 ; free virtual = 9203
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 1aeea7ce2
+
+Time (s): cpu = 00:06:54 ; elapsed = 00:03:56 . Memory (MB): peak = 5052.480 ; gain = 159.293 ; free physical = 6804 ; free virtual = 9203
+Phase 5 Delay and Skew Optimization | Checksum: 1aeea7ce2
+
+Time (s): cpu = 00:06:54 ; elapsed = 00:03:56 . Memory (MB): peak = 5052.480 ; gain = 159.293 ; free physical = 6804 ; free virtual = 9203
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 12b871e7e
+
+Time (s): cpu = 00:07:03 ; elapsed = 00:03:58 . Memory (MB): peak = 5052.480 ; gain = 159.293 ; free physical = 6813 ; free virtual = 9212
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.093  | TNS=0.000  | WHS=0.010  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 18e3e4e04
+
+Time (s): cpu = 00:07:03 ; elapsed = 00:03:59 . Memory (MB): peak = 5052.480 ; gain = 159.293 ; free physical = 6813 ; free virtual = 9212
+Phase 6 Post Hold Fix | Checksum: 18e3e4e04
+
+Time (s): cpu = 00:07:03 ; elapsed = 00:03:59 . Memory (MB): peak = 5052.480 ; gain = 159.293 ; free physical = 6813 ; free virtual = 9212
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 8.81735 %
+  Global Horizontal Routing Utilization  = 8.68505 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: e93e3ded
+
+Time (s): cpu = 00:07:04 ; elapsed = 00:03:59 . Memory (MB): peak = 5052.480 ; gain = 159.293 ; free physical = 6809 ; free virtual = 9208
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: e93e3ded
+
+Time (s): cpu = 00:07:04 ; elapsed = 00:03:59 . Memory (MB): peak = 5052.480 ; gain = 159.293 ; free physical = 6807 ; free virtual = 9206
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: e93e3ded
+
+Time (s): cpu = 00:07:07 ; elapsed = 00:04:01 . Memory (MB): peak = 5052.480 ; gain = 159.293 ; free physical = 6817 ; free virtual = 9217
+
+Phase 10 Resolve XTalk
+Phase 10 Resolve XTalk | Checksum: e93e3ded
+
+Time (s): cpu = 00:07:07 ; elapsed = 00:04:01 . Memory (MB): peak = 5052.480 ; gain = 159.293 ; free physical = 6818 ; free virtual = 9217
+
+Phase 11 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=0.093  | TNS=0.000  | WHS=0.010  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 11 Post Router Timing | Checksum: e93e3ded
+
+Time (s): cpu = 00:07:13 ; elapsed = 00:04:02 . Memory (MB): peak = 5052.480 ; gain = 159.293 ; free physical = 6820 ; free virtual = 9219
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:07:13 ; elapsed = 00:04:02 . Memory (MB): peak = 5052.480 ; gain = 159.293 ; free physical = 6907 ; free virtual = 9306
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+179 Infos, 2 Warnings, 2 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:07:24 ; elapsed = 00:04:05 . Memory (MB): peak = 5052.480 ; gain = 159.293 ; free physical = 6907 ; free virtual = 9306
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:09 ; elapsed = 00:00:04 . Memory (MB): peak = 5052.480 ; gain = 0.000 ; free physical = 6726 ; free virtual = 9248
+INFO: [Common 17-1381] The checkpoint '/home/madhusudhan/Downloads/DPUCZDX8G_VAI_v3.0/prj/Vivado/hw/prj/KR260.runs/impl_1_01/top_wrapper_routed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:16 ; elapsed = 00:00:09 . Memory (MB): peak = 5060.484 ; gain = 8.004 ; free physical = 6764 ; free virtual = 9202
+INFO: [runtcl-4] Executing : report_drc -file top_wrapper_drc_routed.rpt -pb top_wrapper_drc_routed.pb -rpx top_wrapper_drc_routed.rpx
+Command: report_drc -file top_wrapper_drc_routed.rpt -pb top_wrapper_drc_routed.pb -rpx top_wrapper_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file /home/madhusudhan/Downloads/DPUCZDX8G_VAI_v3.0/prj/Vivado/hw/prj/KR260.runs/impl_1_01/top_wrapper_drc_routed.rpt.
+report_drc completed successfully
+INFO: [runtcl-4] Executing : report_methodology -file top_wrapper_methodology_drc_routed.rpt -pb top_wrapper_methodology_drc_routed.pb -rpx top_wrapper_methodology_drc_routed.rpx
+Command: report_methodology -file top_wrapper_methodology_drc_routed.rpt -pb top_wrapper_methodology_drc_routed.pb -rpx top_wrapper_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 8 threads
+INFO: [Vivado_Tcl 2-1520] The results of Report Methodology are in file /home/madhusudhan/Downloads/DPUCZDX8G_VAI_v3.0/prj/Vivado/hw/prj/KR260.runs/impl_1_01/top_wrapper_methodology_drc_routed.rpt.
+report_methodology completed successfully
+report_methodology: Time (s): cpu = 00:00:32 ; elapsed = 00:00:08 . Memory (MB): peak = 5111.113 ; gain = 0.000 ; free physical = 6669 ; free virtual = 9133
+INFO: [runtcl-4] Executing : report_power -file top_wrapper_power_routed.rpt -pb top_wrapper_power_summary_routed.pb -rpx top_wrapper_power_routed.rpx
+Command: report_power -file top_wrapper_power_routed.rpt -pb top_wrapper_power_summary_routed.pb -rpx top_wrapper_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+191 Infos, 3 Warnings, 2 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:26 ; elapsed = 00:00:08 . Memory (MB): peak = 5150.969 ; gain = 39.855 ; free physical = 6602 ; free virtual = 9066
+INFO: [runtcl-4] Executing : report_route_status -file top_wrapper_route_status.rpt -pb top_wrapper_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -report_unconstrained -file top_wrapper_timing_summary_routed.rpt -pb top_wrapper_timing_summary_routed.pb -rpx top_wrapper_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2LV, Temperature grade: C, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+INFO: [runtcl-4] Executing : report_incremental_reuse -file top_wrapper_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file top_wrapper_clock_utilization_routed.rpt
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file top_wrapper_bus_skew_routed.rpt -pb top_wrapper_bus_skew_routed.pb -rpx top_wrapper_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2LV, Temperature grade: C, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+
+WARNING::74 - Unsupported FPGA device name 'xck26-sfvc784-2LV-c'. Verify that the specified device is a valid customer supported device.
+-p xck26-sfvc784-2LV-c
+   ^
+
+Command: write_bitstream -force top_wrapper.bit -bin_file
+Attempting to get a license for feature 'Implementation' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xck26'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+WARNING: [DRC AVAL-318] DSP_dynamic_PCIN_tieoff_only_on_bottom_sites: The DSP48E2 top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[0].gen_pp[0].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+WARNING: [DRC AVAL-318] DSP_dynamic_PCIN_tieoff_only_on_bottom_sites: The DSP48E2 top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[0].gen_pp[1].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+WARNING: [DRC AVAL-318] DSP_dynamic_PCIN_tieoff_only_on_bottom_sites: The DSP48E2 top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[0].gen_pp[2].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+WARNING: [DRC AVAL-318] DSP_dynamic_PCIN_tieoff_only_on_bottom_sites: The DSP48E2 top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[0].gen_pp[3].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+WARNING: [DRC AVAL-318] DSP_dynamic_PCIN_tieoff_only_on_bottom_sites: The DSP48E2 top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[1].gen_pp[0].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+WARNING: [DRC AVAL-318] DSP_dynamic_PCIN_tieoff_only_on_bottom_sites: The DSP48E2 top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[1].gen_pp[1].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+WARNING: [DRC AVAL-318] DSP_dynamic_PCIN_tieoff_only_on_bottom_sites: The DSP48E2 top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[1].gen_pp[2].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+WARNING: [DRC AVAL-318] DSP_dynamic_PCIN_tieoff_only_on_bottom_sites: The DSP48E2 top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[1].gen_pp[3].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+WARNING: [DRC AVAL-318] DSP_dynamic_PCIN_tieoff_only_on_bottom_sites: The DSP48E2 top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[2].gen_pp[0].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+WARNING: [DRC AVAL-318] DSP_dynamic_PCIN_tieoff_only_on_bottom_sites: The DSP48E2 top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[2].gen_pp[1].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+WARNING: [DRC AVAL-318] DSP_dynamic_PCIN_tieoff_only_on_bottom_sites: The DSP48E2 top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[2].gen_pp[2].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+WARNING: [DRC AVAL-318] DSP_dynamic_PCIN_tieoff_only_on_bottom_sites: The DSP48E2 top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[2].gen_pp[3].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+WARNING: [DRC AVAL-318] DSP_dynamic_PCIN_tieoff_only_on_bottom_sites: The DSP48E2 top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[3].gen_pp[0].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+WARNING: [DRC AVAL-318] DSP_dynamic_PCIN_tieoff_only_on_bottom_sites: The DSP48E2 top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[3].gen_pp[1].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+WARNING: [DRC AVAL-318] DSP_dynamic_PCIN_tieoff_only_on_bottom_sites: The DSP48E2 top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[3].gen_pp[2].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+WARNING: [DRC AVAL-318] DSP_dynamic_PCIN_tieoff_only_on_bottom_sites: The DSP48E2 top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[3].gen_pp[3].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+WARNING: [DRC AVAL-318] DSP_dynamic_PCIN_tieoff_only_on_bottom_sites: The DSP48E2 top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[4].gen_pp[0].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+WARNING: [DRC AVAL-318] DSP_dynamic_PCIN_tieoff_only_on_bottom_sites: The DSP48E2 top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[4].gen_pp[1].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+WARNING: [DRC AVAL-318] DSP_dynamic_PCIN_tieoff_only_on_bottom_sites: The DSP48E2 top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[4].gen_pp[2].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+WARNING: [DRC AVAL-318] DSP_dynamic_PCIN_tieoff_only_on_bottom_sites: The DSP48E2 top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[4].gen_pp[3].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+WARNING: [DRC AVAL-318] DSP_dynamic_PCIN_tieoff_only_on_bottom_sites: The DSP48E2 top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[5].gen_pp[0].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+WARNING: [DRC AVAL-318] DSP_dynamic_PCIN_tieoff_only_on_bottom_sites: The DSP48E2 top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[5].gen_pp[1].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+WARNING: [DRC AVAL-318] DSP_dynamic_PCIN_tieoff_only_on_bottom_sites: The DSP48E2 top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[5].gen_pp[2].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+WARNING: [DRC AVAL-318] DSP_dynamic_PCIN_tieoff_only_on_bottom_sites: The DSP48E2 top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[5].gen_pp[3].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+WARNING: [DRC AVAL-318] DSP_dynamic_PCIN_tieoff_only_on_bottom_sites: The DSP48E2 top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[6].gen_pp[0].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+WARNING: [DRC AVAL-318] DSP_dynamic_PCIN_tieoff_only_on_bottom_sites: The DSP48E2 top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[6].gen_pp[1].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+WARNING: [DRC AVAL-318] DSP_dynamic_PCIN_tieoff_only_on_bottom_sites: The DSP48E2 top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[6].gen_pp[2].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+WARNING: [DRC AVAL-318] DSP_dynamic_PCIN_tieoff_only_on_bottom_sites: The DSP48E2 top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[6].gen_pp[3].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+WARNING: [DRC AVAL-318] DSP_dynamic_PCIN_tieoff_only_on_bottom_sites: The DSP48E2 top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[7].gen_pp[0].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+WARNING: [DRC AVAL-318] DSP_dynamic_PCIN_tieoff_only_on_bottom_sites: The DSP48E2 top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[7].gen_pp[1].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+WARNING: [DRC AVAL-318] DSP_dynamic_PCIN_tieoff_only_on_bottom_sites: The DSP48E2 top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[7].gen_pp[2].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+WARNING: [DRC AVAL-318] DSP_dynamic_PCIN_tieoff_only_on_bottom_sites: The DSP48E2 top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[7].gen_pp[3].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+WARNING: [DRC DPIP-2] Input pipelining: DSP top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[0].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 input top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[0].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[2].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 input top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[2].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[3].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 input top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[3].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[3].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 input top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[3].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPOP-3] PREG Output pipelining: DSP top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_buf_writer/u_ddr_reader/u_mult_hp0/u_dsp/GenDsp48E2.u_dsp48e2 output top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_buf_writer/u_ddr_reader/u_mult_hp0/u_dsp/GenDsp48E2.u_dsp48e2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-4] MREG Output pipelining: DSP top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_save_top/u_save_fetch_param/mul_c_reg multiplier stage top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_save_top/u_save_fetch_param/mul_c_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[0].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[0].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[0].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[0].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[0].GenMultOcp[2].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[0].GenMultOcp[2].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[0].GenMultOcp[3].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[0].GenMultOcp[3].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[1].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[1].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[1].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[1].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[1].GenMultOcp[2].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[1].GenMultOcp[2].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[1].GenMultOcp[3].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[1].GenMultOcp[3].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[2].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[2].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[2].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[2].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[2].GenMultOcp[2].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[2].GenMultOcp[2].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[2].GenMultOcp[3].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[2].GenMultOcp[3].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[3].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[3].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[3].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[3].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[3].GenMultOcp[2].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[3].GenMultOcp[2].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[3].GenMultOcp[3].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[3].GenMultOcp[3].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[0].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[0].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[0].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[0].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[0].GenMultOcp[2].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[0].GenMultOcp[2].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[0].GenMultOcp[3].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[0].GenMultOcp[3].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[1].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[1].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[1].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[1].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[1].GenMultOcp[2].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[1].GenMultOcp[2].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[1].GenMultOcp[3].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[1].GenMultOcp[3].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[2].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[2].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[2].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[2].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[2].GenMultOcp[2].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[2].GenMultOcp[2].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[2].GenMultOcp[3].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[2].GenMultOcp[3].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[3].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[3].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[3].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[3].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[3].GenMultOcp[2].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[3].GenMultOcp[2].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[3].GenMultOcp[3].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1731] DSP_Abus_preadd_amult_sel_A_sign_bit_restriction: top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[3].GenMultOcp[3].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC RTSTAT-10] No routable loads: 138 net(s) have no routable loads. The problem bus(es) and/or net(s) are top_i/hier_dpu/hier_dpu_ghp/dpu_intc_M_AXI_HP0_FPD/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, top_i/hier_dpu/hier_dpu_ghp/dpu_intc_M_AXI_LPD/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, top_i/hier_dpu/hier_dpu_ghp/dpu_intc_M_AXI_LPD/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, top_i/hier_dpu/hier_dpu_ghp/dpu_intc_M_AXI_LPD/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, top_i/hier_dpu/hier_dpu_ghp/dpu_intc_M_AXI_HP0_FPD/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, top_i/hier_dpu/hier_dpu_ghp/dpu_intc_M_AXI_HP0_FPD/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, top_i/hier_dpu/hier_dpu_ghp/dpu_intc_M_AXI_HP1_FPD/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, top_i/hier_dpu/hier_dpu_ghp/dpu_intc_M_AXI_LPD/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, top_i/hier_dpu/hier_dpu_ghp/dpu_intc_M_AXI_HP1_FPD/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, top_i/hier_dpu/hier_dpu_ghp/dpu_intc_M_AXI_HP0_FPD/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, top_i/hier_dpu/hier_dpu_ghp/dpu_intc_M_AXI_HP1_FPD/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, top_i/hier_dpu/hier_dpu_ghp/dpu_intc_M_AXI_HP0_FPD/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, top_i/hier_dpu/hier_dpu_ghp/dpu_intc_M_AXI_HP1_FPD/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, top_i/hier_dpu/hier_dpu_ghp/dpu_intc_M_AXI_HP1_FPD/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, top_i/hier_dpu/hier_dpu_ghp/dpu_intc_M_AXI_LPD/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i... and (the first 15 of 78 listed).
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 103 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 8 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Bitstream compression saved 15055520 bits.
+Writing bitstream ./top_wrapper.bit...
+Writing bitstream ./top_wrapper.bin...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-1876] WebTalk data collection is mandatory when using a ULT device. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
+INFO: [Common 17-83] Releasing license: Implementation
+12 Infos, 103 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:46 ; elapsed = 00:00:45 . Memory (MB): peak = 5346.723 ; gain = 195.754 ; free physical = 6559 ; free virtual = 9045
+INFO: [Common 17-206] Exiting Vivado at Wed Feb  5 09:16:41 2025...

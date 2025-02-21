@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Wed Jan 29 19:27:12 2025
+# Process ID: 14399
+# Current directory: /home/madhusudhan/Downloads/DPUCZDX8G_VAI_v3.0/prj/Vivado/hw
+# Command line: vivado -source scripts/trd_prj.tcl
+# Log file: /home/madhusudhan/Downloads/DPUCZDX8G_VAI_v3.0/prj/Vivado/hw/vivado.log
+# Journal file: /home/madhusudhan/Downloads/DPUCZDX8G_VAI_v3.0/prj/Vivado/hw/vivado.jou
+# Running On: madhusudhan-OMEN-by-HP-Gaming-Laptop-16-k0xxx, OS: Linux, CPU Frequency: 831.810 MHz, CPU Physical cores: 14, Host memory: 16418 MB
+#-----------------------------------------------------------
+start_gui
+source scripts/trd_prj.tcl
+source /home/madhusudhan/Downloads/DPUCZDX8G_VAI_v3.0/prj/Vivado/hw/scripts/trd_prj.tcl

@@ -1,0 +1,571 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
+| Date         : Wed Feb  5 09:15:35 2025
+| Host         : madhusudhan-OMEN-by-HP-Gaming-Laptop-16-k0xxx running 64-bit Ubuntu 24.04.1 LTS
+| Command      : report_drc -file top_wrapper_drc_routed.rpt -pb top_wrapper_drc_routed.pb -rpx top_wrapper_drc_routed.rpx
+| Design       : top_wrapper
+| Device       : xck26-sfvc784-2LV-c
+| Speed File   : -2LV
+| Design State : Fully Routed
+---------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 103
++-----------+----------+--------------------------------------------------+------------+
+| Rule      | Severity | Description                                      | Violations |
++-----------+----------+--------------------------------------------------+------------+
+| AVAL-318  | Warning  | DSP_dynamic_PCIN_tieoff_only_on_bottom_sites     | 32         |
+| DPIP-2    | Warning  | Input pipelining                                 | 4          |
+| DPOP-3    | Warning  | PREG Output pipelining                           | 1          |
+| DPOP-4    | Warning  | MREG Output pipelining                           | 1          |
+| REQP-1731 | Warning  | DSP_Abus_preadd_amult_sel_A_sign_bit_restriction | 64         |
+| RTSTAT-10 | Warning  | No routable loads                                | 1          |
++-----------+----------+--------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+AVAL-318#1 Warning
+DSP_dynamic_PCIN_tieoff_only_on_bottom_sites  
+The DSP48E2 top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[0].gen_pp[0].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+Related violations: <none>
+
+AVAL-318#2 Warning
+DSP_dynamic_PCIN_tieoff_only_on_bottom_sites  
+The DSP48E2 top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[0].gen_pp[1].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+Related violations: <none>
+
+AVAL-318#3 Warning
+DSP_dynamic_PCIN_tieoff_only_on_bottom_sites  
+The DSP48E2 top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[0].gen_pp[2].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+Related violations: <none>
+
+AVAL-318#4 Warning
+DSP_dynamic_PCIN_tieoff_only_on_bottom_sites  
+The DSP48E2 top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[0].gen_pp[3].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+Related violations: <none>
+
+AVAL-318#5 Warning
+DSP_dynamic_PCIN_tieoff_only_on_bottom_sites  
+The DSP48E2 top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[1].gen_pp[0].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+Related violations: <none>
+
+AVAL-318#6 Warning
+DSP_dynamic_PCIN_tieoff_only_on_bottom_sites  
+The DSP48E2 top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[1].gen_pp[1].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+Related violations: <none>
+
+AVAL-318#7 Warning
+DSP_dynamic_PCIN_tieoff_only_on_bottom_sites  
+The DSP48E2 top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[1].gen_pp[2].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+Related violations: <none>
+
+AVAL-318#8 Warning
+DSP_dynamic_PCIN_tieoff_only_on_bottom_sites  
+The DSP48E2 top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[1].gen_pp[3].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+Related violations: <none>
+
+AVAL-318#9 Warning
+DSP_dynamic_PCIN_tieoff_only_on_bottom_sites  
+The DSP48E2 top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[2].gen_pp[0].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+Related violations: <none>
+
+AVAL-318#10 Warning
+DSP_dynamic_PCIN_tieoff_only_on_bottom_sites  
+The DSP48E2 top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[2].gen_pp[1].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+Related violations: <none>
+
+AVAL-318#11 Warning
+DSP_dynamic_PCIN_tieoff_only_on_bottom_sites  
+The DSP48E2 top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[2].gen_pp[2].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+Related violations: <none>
+
+AVAL-318#12 Warning
+DSP_dynamic_PCIN_tieoff_only_on_bottom_sites  
+The DSP48E2 top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[2].gen_pp[3].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+Related violations: <none>
+
+AVAL-318#13 Warning
+DSP_dynamic_PCIN_tieoff_only_on_bottom_sites  
+The DSP48E2 top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[3].gen_pp[0].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+Related violations: <none>
+
+AVAL-318#14 Warning
+DSP_dynamic_PCIN_tieoff_only_on_bottom_sites  
+The DSP48E2 top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[3].gen_pp[1].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+Related violations: <none>
+
+AVAL-318#15 Warning
+DSP_dynamic_PCIN_tieoff_only_on_bottom_sites  
+The DSP48E2 top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[3].gen_pp[2].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+Related violations: <none>
+
+AVAL-318#16 Warning
+DSP_dynamic_PCIN_tieoff_only_on_bottom_sites  
+The DSP48E2 top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[3].gen_pp[3].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+Related violations: <none>
+
+AVAL-318#17 Warning
+DSP_dynamic_PCIN_tieoff_only_on_bottom_sites  
+The DSP48E2 top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[4].gen_pp[0].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+Related violations: <none>
+
+AVAL-318#18 Warning
+DSP_dynamic_PCIN_tieoff_only_on_bottom_sites  
+The DSP48E2 top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[4].gen_pp[1].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+Related violations: <none>
+
+AVAL-318#19 Warning
+DSP_dynamic_PCIN_tieoff_only_on_bottom_sites  
+The DSP48E2 top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[4].gen_pp[2].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+Related violations: <none>
+
+AVAL-318#20 Warning
+DSP_dynamic_PCIN_tieoff_only_on_bottom_sites  
+The DSP48E2 top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[4].gen_pp[3].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+Related violations: <none>
+
+AVAL-318#21 Warning
+DSP_dynamic_PCIN_tieoff_only_on_bottom_sites  
+The DSP48E2 top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[5].gen_pp[0].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+Related violations: <none>
+
+AVAL-318#22 Warning
+DSP_dynamic_PCIN_tieoff_only_on_bottom_sites  
+The DSP48E2 top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[5].gen_pp[1].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+Related violations: <none>
+
+AVAL-318#23 Warning
+DSP_dynamic_PCIN_tieoff_only_on_bottom_sites  
+The DSP48E2 top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[5].gen_pp[2].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+Related violations: <none>
+
+AVAL-318#24 Warning
+DSP_dynamic_PCIN_tieoff_only_on_bottom_sites  
+The DSP48E2 top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[5].gen_pp[3].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+Related violations: <none>
+
+AVAL-318#25 Warning
+DSP_dynamic_PCIN_tieoff_only_on_bottom_sites  
+The DSP48E2 top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[6].gen_pp[0].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+Related violations: <none>
+
+AVAL-318#26 Warning
+DSP_dynamic_PCIN_tieoff_only_on_bottom_sites  
+The DSP48E2 top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[6].gen_pp[1].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+Related violations: <none>
+
+AVAL-318#27 Warning
+DSP_dynamic_PCIN_tieoff_only_on_bottom_sites  
+The DSP48E2 top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[6].gen_pp[2].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+Related violations: <none>
+
+AVAL-318#28 Warning
+DSP_dynamic_PCIN_tieoff_only_on_bottom_sites  
+The DSP48E2 top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[6].gen_pp[3].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+Related violations: <none>
+
+AVAL-318#29 Warning
+DSP_dynamic_PCIN_tieoff_only_on_bottom_sites  
+The DSP48E2 top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[7].gen_pp[0].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+Related violations: <none>
+
+AVAL-318#30 Warning
+DSP_dynamic_PCIN_tieoff_only_on_bottom_sites  
+The DSP48E2 top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[7].gen_pp[1].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+Related violations: <none>
+
+AVAL-318#31 Warning
+DSP_dynamic_PCIN_tieoff_only_on_bottom_sites  
+The DSP48E2 top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[7].gen_pp[2].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+Related violations: <none>
+
+AVAL-318#32 Warning
+DSP_dynamic_PCIN_tieoff_only_on_bottom_sites  
+The DSP48E2 top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[7].gen_pp[3].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+Related violations: <none>
+
+DPIP-2#1 Warning
+Input pipelining  
+DSP top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[0].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 input top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[0].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#2 Warning
+Input pipelining  
+DSP top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[2].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 input top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[2].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#3 Warning
+Input pipelining  
+DSP top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[3].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 input top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[3].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#4 Warning
+Input pipelining  
+DSP top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[3].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 input top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[3].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPOP-3#1 Warning
+PREG Output pipelining  
+DSP top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_buf_writer/u_ddr_reader/u_mult_hp0/u_dsp/GenDsp48E2.u_dsp48e2 output top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_buf_writer/u_ddr_reader/u_mult_hp0/u_dsp/GenDsp48E2.u_dsp48e2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-4#1 Warning
+MREG Output pipelining  
+DSP top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_save_top/u_save_fetch_param/mul_c_reg multiplier stage top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_save_top/u_save_fetch_param/mul_c_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+REQP-1731#1 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[0].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#2 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[0].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#3 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[0].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#4 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[0].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#5 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[0].GenMultOcp[2].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#6 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[0].GenMultOcp[2].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#7 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[0].GenMultOcp[3].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#8 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[0].GenMultOcp[3].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#9 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[1].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#10 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[1].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#11 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[1].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#12 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[1].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#13 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[1].GenMultOcp[2].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#14 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[1].GenMultOcp[2].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#15 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[1].GenMultOcp[3].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#16 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[1].GenMultOcp[3].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#17 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[2].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#18 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[2].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#19 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[2].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#20 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[2].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#21 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[2].GenMultOcp[2].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#22 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[2].GenMultOcp[2].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#23 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[2].GenMultOcp[3].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#24 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[2].GenMultOcp[3].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#25 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[3].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#26 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[3].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#27 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[3].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#28 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[3].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#29 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[3].GenMultOcp[2].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#30 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[3].GenMultOcp[2].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#31 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[3].GenMultOcp[3].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#32 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[3].GenMultOcp[3].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#33 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[0].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#34 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[0].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#35 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[0].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#36 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[0].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#37 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[0].GenMultOcp[2].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#38 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[0].GenMultOcp[2].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#39 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[0].GenMultOcp[3].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#40 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[0].GenMultOcp[3].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#41 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[1].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#42 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[1].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#43 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[1].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#44 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[1].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#45 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[1].GenMultOcp[2].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#46 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[1].GenMultOcp[2].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#47 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[1].GenMultOcp[3].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#48 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[1].GenMultOcp[3].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#49 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[2].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#50 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[2].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#51 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[2].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#52 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[2].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#53 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[2].GenMultOcp[2].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#54 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[2].GenMultOcp[2].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#55 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[2].GenMultOcp[3].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#56 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[2].GenMultOcp[3].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#57 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[3].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#58 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[3].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#59 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[3].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#60 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[3].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#61 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[3].GenMultOcp[2].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#62 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[3].GenMultOcp[2].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#63 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[3].GenMultOcp[3].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#64 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+top_i/hier_dpu/DPUCZDX8G/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[3].GenMultOcp[3].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+RTSTAT-10#1 Warning
+No routable loads  
+138 net(s) have no routable loads. The problem bus(es) and/or net(s) are top_i/hier_dpu/hier_dpu_ghp/dpu_intc_M_AXI_HP0_FPD/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,
+top_i/hier_dpu/hier_dpu_ghp/dpu_intc_M_AXI_HP0_FPD/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,
+top_i/hier_dpu/hier_dpu_ghp/dpu_intc_M_AXI_HP0_FPD/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,
+top_i/hier_dpu/hier_dpu_ghp/dpu_intc_M_AXI_HP0_FPD/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,
+top_i/hier_dpu/hier_dpu_ghp/dpu_intc_M_AXI_HP0_FPD/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,
+top_i/hier_dpu/hier_dpu_ghp/dpu_intc_M_AXI_HP1_FPD/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,
+top_i/hier_dpu/hier_dpu_ghp/dpu_intc_M_AXI_HP1_FPD/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,
+top_i/hier_dpu/hier_dpu_ghp/dpu_intc_M_AXI_HP1_FPD/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,
+top_i/hier_dpu/hier_dpu_ghp/dpu_intc_M_AXI_HP1_FPD/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,
+top_i/hier_dpu/hier_dpu_ghp/dpu_intc_M_AXI_HP1_FPD/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,
+top_i/hier_dpu/hier_dpu_ghp/dpu_intc_M_AXI_LPD/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,
+top_i/hier_dpu/hier_dpu_ghp/dpu_intc_M_AXI_LPD/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,
+top_i/hier_dpu/hier_dpu_ghp/dpu_intc_M_AXI_LPD/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,
+top_i/hier_dpu/hier_dpu_ghp/dpu_intc_M_AXI_LPD/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,
+top_i/hier_dpu/hier_dpu_ghp/dpu_intc_M_AXI_LPD/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i
+ (the first 15 of 78 listed nets/buses).
+Related violations: <none>
+
+

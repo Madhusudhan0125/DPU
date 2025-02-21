@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Wed Feb  5 09:08:29 2025
+# Process ID: 106720
+# Current directory: /home/madhusudhan/Downloads/DPUCZDX8G_VAI_v3.0/prj/Vivado/hw/prj/KR260.runs/impl_1_01
+# Command line: vivado -log top_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top_wrapper.tcl -notrace
+# Log file: /home/madhusudhan/Downloads/DPUCZDX8G_VAI_v3.0/prj/Vivado/hw/prj/KR260.runs/impl_1_01/top_wrapper.vdi
+# Journal file: /home/madhusudhan/Downloads/DPUCZDX8G_VAI_v3.0/prj/Vivado/hw/prj/KR260.runs/impl_1_01/vivado.jou
+# Running On: madhusudhan-OMEN-by-HP-Gaming-Laptop-16-k0xxx, OS: Linux, CPU Frequency: 2272.272 MHz, CPU Physical cores: 14, Host memory: 16418 MB
+#-----------------------------------------------------------
+source top_wrapper.tcl -notrace
